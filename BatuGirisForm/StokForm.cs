@@ -13,8 +13,9 @@ namespace BatuGirisForm
 {
     public partial class StokForm : Form
     {
-        // // string connectionString = "Server=BATUHAN\\;Database=uniProje;Trusted_Connection=True;TrustServerCertificate=True;
         string connectionString = "Server=BATUHAN\\SQLEXPRESS;Database=uniProje;Trusted_Connection=True;";
+        // // string connectionString = "Server=BATUHAN\\;Database=uniProje;Trusted_Connection=True;TrustServerCertificate=True;
+  //      string connectionString = "Server=BATUHAN\\SQLEXPRESS;Database=uniProje;Trusted_Connection=True;";
 
         public StokForm()
         {
@@ -24,7 +25,9 @@ namespace BatuGirisForm
         private void btnStokEkle_Click(object sender, EventArgs e)
         {
             StokEkleForm stokEkleForm = new StokEkleForm();
-            stokEkleForm.Show();  // Formu doğru şekilde açıyoruz
+            stokEkleForm.Show();
+            this.Close(); // Mevcut formu kapatır
+
         }
 
         private void btnUygulamayiKapat_Click(object sender, EventArgs e)
@@ -41,8 +44,20 @@ namespace BatuGirisForm
         {
             StoklarForm stoklarForm = new StoklarForm();
             stoklarForm.Show();
+            this.Close(); 
+
+        }
+
+        private void btnStokGuncelle_Click(object sender, EventArgs e)
+        {
+      
+            StokGuncelleForm stokGuncelleForm = new StokGuncelleForm();
+            stokGuncelleForm.Show();
+            this.Close(); 
+
         }
     }
     }
+    
     
 

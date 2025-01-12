@@ -11,3 +11,8 @@ C:\Users\Emre\Desktop\C# Windows Form Projeleri\BatuGirisForm\obj\Debug\BatuGiri
 C:\Users\Emre\Desktop\C# Windows Form Projeleri\BatuGirisForm\obj\Debug\BatuGirisForm.StokForm.resources
 C:\Users\Emre\Desktop\C# Windows Form Projeleri\BatuGirisForm\obj\Debug\BatuGirisForm.StokEkleForm.resources
 C:\Users\Emre\Desktop\C# Windows Form Projeleri\BatuGirisForm\obj\Debug\BatuGirisForm.StoklarForm.resources
+C:\Users\Emre\Desktop\C# Windows Form Projeleri\BatuGirisForm\obj\Debug\BatuGirisForm.StokGuncelleForm.resources
+C:\Users\Emre\Desktop\C# Windows Form Projeleri\BatuGirisForm\bin\Debug\BatuGirisForm.exe.manifest
+C:\Users\Emre\Desktop\C# Windows Form Projeleri\BatuGirisForm\bin\Debug\BatuGirisForm.application
+C:\Users\Emre\Desktop\C# Windows Form Projeleri\BatuGirisForm\obj\Debug\BatuGirisForm.exe.manifest
+C:\Users\Emre\Desktop\C# Windows Form Projeleri\BatuGirisForm\obj\Debug\BatuGirisForm.application

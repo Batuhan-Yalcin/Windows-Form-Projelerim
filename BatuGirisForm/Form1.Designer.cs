@@ -47,8 +47,10 @@
             this.label7 = new System.Windows.Forms.Label();
             this.txtKullaniciAdiGiris = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -80,7 +82,7 @@
             this.rbtnKadın.Location = new System.Drawing.Point(167, 247);
             this.rbtnKadın.Name = "rbtnKadın";
             this.rbtnKadın.Size = new System.Drawing.Size(57, 17);
-            this.rbtnKadın.TabIndex = 3;
+            this.rbtnKadın.TabIndex = 5;
             this.rbtnKadın.TabStop = true;
             this.rbtnKadın.Text = "Kadın";
             this.rbtnKadın.UseVisualStyleBackColor = true;
@@ -91,37 +93,45 @@
             this.rbtnErkek.Location = new System.Drawing.Point(100, 247);
             this.rbtnErkek.Name = "rbtnErkek";
             this.rbtnErkek.Size = new System.Drawing.Size(58, 17);
-            this.rbtnErkek.TabIndex = 3;
+            this.rbtnErkek.TabIndex = 4;
             this.rbtnErkek.TabStop = true;
             this.rbtnErkek.Text = "Erkek";
             this.rbtnErkek.UseVisualStyleBackColor = true;
             // 
             // btnKayitOl
             // 
+            this.btnKayitOl.BackColor = System.Drawing.Color.Fuchsia;
+            this.btnKayitOl.ForeColor = System.Drawing.Color.Gold;
             this.btnKayitOl.Location = new System.Drawing.Point(6, 285);
             this.btnKayitOl.Name = "btnKayitOl";
             this.btnKayitOl.Size = new System.Drawing.Size(240, 28);
-            this.btnKayitOl.TabIndex = 2;
+            this.btnKayitOl.TabIndex = 6;
             this.btnKayitOl.Text = "Kayıt Ol";
-            this.btnKayitOl.UseVisualStyleBackColor = true;
+            this.btnKayitOl.UseVisualStyleBackColor = false;
             this.btnKayitOl.Click += new System.EventHandler(this.btnKayitOl_Click);
             // 
             // txtSifre
             // 
+            this.txtSifre.BackColor = System.Drawing.Color.DarkGray;
+            this.txtSifre.ForeColor = System.Drawing.Color.Yellow;
             this.txtSifre.Location = new System.Drawing.Point(100, 194);
             this.txtSifre.Name = "txtSifre";
             this.txtSifre.Size = new System.Drawing.Size(146, 20);
-            this.txtSifre.TabIndex = 1;
+            this.txtSifre.TabIndex = 3;
             // 
             // txtKullaniciAdi
             // 
+            this.txtKullaniciAdi.BackColor = System.Drawing.Color.DarkGray;
+            this.txtKullaniciAdi.ForeColor = System.Drawing.Color.Yellow;
             this.txtKullaniciAdi.Location = new System.Drawing.Point(100, 144);
             this.txtKullaniciAdi.Name = "txtKullaniciAdi";
             this.txtKullaniciAdi.Size = new System.Drawing.Size(146, 20);
-            this.txtKullaniciAdi.TabIndex = 1;
+            this.txtKullaniciAdi.TabIndex = 2;
             // 
             // txtEmail
             // 
+            this.txtEmail.BackColor = System.Drawing.Color.DarkGray;
+            this.txtEmail.ForeColor = System.Drawing.Color.Yellow;
             this.txtEmail.Location = new System.Drawing.Point(100, 84);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(146, 20);
@@ -129,10 +139,12 @@
             // 
             // txtAdSoyad
             // 
+            this.txtAdSoyad.BackColor = System.Drawing.Color.DarkGray;
+            this.txtAdSoyad.ForeColor = System.Drawing.Color.Yellow;
             this.txtAdSoyad.Location = new System.Drawing.Point(100, 35);
             this.txtAdSoyad.Name = "txtAdSoyad";
             this.txtAdSoyad.Size = new System.Drawing.Size(146, 20);
-            this.txtAdSoyad.TabIndex = 1;
+            this.txtAdSoyad.TabIndex = 0;
             // 
             // label5
             // 
@@ -198,17 +210,19 @@
             // 
             // btnGirisYap
             // 
-            this.btnGirisYap.Location = new System.Drawing.Point(25, 318);
+            this.btnGirisYap.BackColor = System.Drawing.Color.LawnGreen;
+            this.btnGirisYap.Location = new System.Drawing.Point(25, 211);
             this.btnGirisYap.Name = "btnGirisYap";
             this.btnGirisYap.Size = new System.Drawing.Size(220, 23);
             this.btnGirisYap.TabIndex = 2;
             this.btnGirisYap.Text = "Giriş Yap";
-            this.btnGirisYap.UseVisualStyleBackColor = true;
+            this.btnGirisYap.UseVisualStyleBackColor = false;
             this.btnGirisYap.Click += new System.EventHandler(this.btnGirisYap_Click);
             // 
             // txtSifreGiris
             // 
-            this.txtSifreGiris.Location = new System.Drawing.Point(99, 204);
+            this.txtSifreGiris.BackColor = System.Drawing.Color.Chartreuse;
+            this.txtSifreGiris.Location = new System.Drawing.Point(99, 144);
             this.txtSifreGiris.Name = "txtSifreGiris";
             this.txtSifreGiris.Size = new System.Drawing.Size(146, 20);
             this.txtSifreGiris.TabIndex = 1;
@@ -216,7 +230,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(22, 211);
+            this.label7.Location = new System.Drawing.Point(22, 147);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(45, 13);
             this.label7.TabIndex = 0;
@@ -225,10 +239,11 @@
             // 
             // txtKullaniciAdiGiris
             // 
+            this.txtKullaniciAdiGiris.BackColor = System.Drawing.Color.Chartreuse;
             this.txtKullaniciAdiGiris.Location = new System.Drawing.Point(99, 94);
             this.txtKullaniciAdiGiris.Name = "txtKullaniciAdiGiris";
             this.txtKullaniciAdiGiris.Size = new System.Drawing.Size(146, 20);
-            this.txtKullaniciAdiGiris.TabIndex = 1;
+            this.txtKullaniciAdiGiris.TabIndex = 0;
             // 
             // label6
             // 
@@ -240,12 +255,21 @@
             this.label6.Text = "Kullanıcı Adı :";
             this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(270, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(275, 332);
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 328);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Name = "Form1";
@@ -255,6 +279,7 @@
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -280,6 +305,7 @@
         private System.Windows.Forms.Button btnGirisYap;
         private System.Windows.Forms.TextBox txtSifreGiris;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 

@@ -53,7 +53,7 @@
             this.btnStoklar.Location = new System.Drawing.Point(182, 1);
             this.btnStoklar.Name = "btnStoklar";
             this.btnStoklar.Size = new System.Drawing.Size(151, 78);
-            this.btnStoklar.TabIndex = 0;
+            this.btnStoklar.TabIndex = 1;
             this.btnStoklar.Text = "STOKLAR";
             this.btnStoklar.UseVisualStyleBackColor = false;
             this.btnStoklar.Click += new System.EventHandler(this.btnStoklar_Click);
@@ -65,9 +65,10 @@
             this.btnStokGuncelle.Location = new System.Drawing.Point(-1, 105);
             this.btnStokGuncelle.Name = "btnStokGuncelle";
             this.btnStokGuncelle.Size = new System.Drawing.Size(151, 78);
-            this.btnStokGuncelle.TabIndex = 0;
-            this.btnStokGuncelle.Text = "STOK GÜNCELLE";
+            this.btnStokGuncelle.TabIndex = 2;
+            this.btnStokGuncelle.Text = "STOK GÖRÜNTÜLE";
             this.btnStokGuncelle.UseVisualStyleBackColor = false;
+            this.btnStokGuncelle.Click += new System.EventHandler(this.btnStokGuncelle_Click);
             // 
             // btnUygulamayiKapat
             // 
@@ -76,7 +77,7 @@
             this.btnUygulamayiKapat.Location = new System.Drawing.Point(182, 105);
             this.btnUygulamayiKapat.Name = "btnUygulamayiKapat";
             this.btnUygulamayiKapat.Size = new System.Drawing.Size(151, 78);
-            this.btnUygulamayiKapat.TabIndex = 0;
+            this.btnUygulamayiKapat.TabIndex = 3;
             this.btnUygulamayiKapat.Text = "UYGULAMAYI KAPAT";
             this.btnUygulamayiKapat.UseVisualStyleBackColor = false;
             this.btnUygulamayiKapat.Click += new System.EventHandler(this.btnUygulamayiKapat_Click);
@@ -85,6 +86,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.PeachPuff;
             this.ClientSize = new System.Drawing.Size(354, 192);
             this.Controls.Add(this.btnUygulamayiKapat);
             this.Controls.Add(this.btnStokGuncelle);

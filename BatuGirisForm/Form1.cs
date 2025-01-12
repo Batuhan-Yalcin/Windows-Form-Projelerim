@@ -25,7 +25,7 @@ namespace BatuGirisForm
         }
 
 
-        // Kayıt Ol butonuna tıklandığında
+       
         private void btnKayitOl_Click(object sender, EventArgs e)
         {
             string adSoyad = txtAdSoyad.Text;
@@ -34,7 +34,7 @@ namespace BatuGirisForm
             string kullaniciAdi = txtKullaniciAdi.Text;
             string sifre = txtSifre.Text;
 
-            // Veritabanına bağlantı ve kayıt ekleme
+           
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 try
@@ -69,13 +69,13 @@ namespace BatuGirisForm
 
 
 
-        // Giriş Yap butonuna tıklandığında
+      
         private void btnGirisYap_Click(object sender, EventArgs e)
         {
             string kullaniciAdi = txtKullaniciAdiGiris.Text;
             string sifre = txtSifreGiris.Text;
 
-            // Veritabanına bağlantı ve kullanıcı kontrolü
+          
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 connection.Open();
@@ -90,10 +90,10 @@ namespace BatuGirisForm
                     if (result > 0)
                     {
                         MessageBox.Show("Giriş başarılı!");
-                        // Yeni formu açıyoruz
+                       
                         StokForm stokForm = new StokForm();
-                        stokForm.Show(); // Yeni formu göster
-                        this.Hide(); // Eski formu gizle
+                        stokForm.Show(); 
+                        this.Hide(); 
                     }
                     else
                     {
@@ -104,14 +104,14 @@ namespace BatuGirisForm
         }
         private void label6_Click(object sender, EventArgs e)
         {
-            // Buraya tıklandığında yapılacak işlemleri yazın.
+           
             MessageBox.Show("Label6 tıklandı!");
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            // Form yüklendiğinde yapılacak işlemler buraya yazılır.
-            // Örneğin, formun başlangıç durumlarını ayarlayabilirsiniz.
+            pictureBox1.Image = Image.FromFile(@"C:\Resimler\kayıtol.png");
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
         }
     }
 }
