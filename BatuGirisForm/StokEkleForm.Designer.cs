@@ -66,7 +66,7 @@
             this.txtUrunKodu.Multiline = true;
             this.txtUrunKodu.Name = "txtUrunKodu";
             this.txtUrunKodu.Size = new System.Drawing.Size(149, 27);
-            this.txtUrunKodu.TabIndex = 0;
+            this.txtUrunKodu.TabIndex = 1;
             // 
             // txtUrunAdedi
             // 
@@ -74,7 +74,7 @@
             this.txtUrunAdedi.Multiline = true;
             this.txtUrunAdedi.Name = "txtUrunAdedi";
             this.txtUrunAdedi.Size = new System.Drawing.Size(149, 27);
-            this.txtUrunAdedi.TabIndex = 2;
+            this.txtUrunAdedi.TabIndex = 1;
             // 
             // txtUrunAlisFiyati
             // 
@@ -82,7 +82,7 @@
             this.txtUrunAlisFiyati.Multiline = true;
             this.txtUrunAlisFiyati.Name = "txtUrunAlisFiyati";
             this.txtUrunAlisFiyati.Size = new System.Drawing.Size(149, 27);
-            this.txtUrunAlisFiyati.TabIndex = 3;
+            this.txtUrunAlisFiyati.TabIndex = 1;
             // 
             // txtSatisFiyati
             // 
@@ -90,7 +90,7 @@
             this.txtSatisFiyati.Multiline = true;
             this.txtSatisFiyati.Name = "txtSatisFiyati";
             this.txtSatisFiyati.Size = new System.Drawing.Size(149, 27);
-            this.txtSatisFiyati.TabIndex = 4;
+            this.txtSatisFiyati.TabIndex = 1;
             // 
             // label2
             // 
@@ -136,7 +136,7 @@
             this.btnStokEkle.Location = new System.Drawing.Point(118, 346);
             this.btnStokEkle.Name = "btnStokEkle";
             this.btnStokEkle.Size = new System.Drawing.Size(149, 47);
-            this.btnStokEkle.TabIndex = 5;
+            this.btnStokEkle.TabIndex = 2;
             this.btnStokEkle.Text = "STOK EKLE";
             this.btnStokEkle.UseVisualStyleBackColor = false;
             this.btnStokEkle.Click += new System.EventHandler(this.btnStokEkle_Click);

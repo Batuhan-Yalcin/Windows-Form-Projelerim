@@ -28,21 +28,24 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             this.StokFormdata = new System.Windows.Forms.DataGridView();
-            this.stokBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.uniProjeDataSet = new BatuGirisForm.uniProjeDataSet();
-            this.stokTableAdapter = new BatuGirisForm.uniProjeDataSetTableAdapters.StokTableAdapter();
+            this.urunKodu = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.UrunAdi = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.UrunAdedi = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.UrunAlisFiyati = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.satisFiyati = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.StokFormdata)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.stokBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.uniProjeDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // StokFormdata
             // 
-            this.StokFormdata.AutoGenerateColumns = false;
             this.StokFormdata.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.StokFormdata.DataSource = this.stokBindingSource;
+            this.StokFormdata.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.urunKodu,
+            this.UrunAdi,
+            this.UrunAdedi,
+            this.UrunAlisFiyati,
+            this.satisFiyati});
             this.StokFormdata.Dock = System.Windows.Forms.DockStyle.Fill;
             this.StokFormdata.Location = new System.Drawing.Point(0, 0);
             this.StokFormdata.Name = "StokFormdata";
@@ -50,19 +53,30 @@
             this.StokFormdata.TabIndex = 0;
             this.StokFormdata.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.StokFormdata_CellContentClick);
             // 
-            // stokBindingSource
+            // urunKodu
             // 
-            this.stokBindingSource.DataMember = "Stok";
-            this.stokBindingSource.DataSource = this.uniProjeDataSet;
+            this.urunKodu.HeaderText = "ÜrünKodu";
+            this.urunKodu.Name = "urunKodu";
             // 
-            // uniProjeDataSet
+            // UrunAdi
             // 
-            this.uniProjeDataSet.DataSetName = "uniProjeDataSet";
-            this.uniProjeDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.UrunAdi.HeaderText = "Ürün Adı";
+            this.UrunAdi.Name = "UrunAdi";
             // 
-            // stokTableAdapter
+            // UrunAdedi
             // 
-            this.stokTableAdapter.ClearBeforeFill = true;
+            this.UrunAdedi.HeaderText = "Ürün Adedi";
+            this.UrunAdedi.Name = "UrunAdedi";
+            // 
+            // UrunAlisFiyati
+            // 
+            this.UrunAlisFiyati.HeaderText = "Alış Fiyatı";
+            this.UrunAlisFiyati.Name = "UrunAlisFiyati";
+            // 
+            // satisFiyati
+            // 
+            this.satisFiyati.HeaderText = "Satış Fiyatı";
+            this.satisFiyati.Name = "satisFiyati";
             // 
             // StoklarForm
             // 
@@ -74,8 +88,6 @@
             this.Text = "StoklarForm";
             this.Load += new System.EventHandler(this.StoklarForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.StokFormdata)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.stokBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.uniProjeDataSet)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -83,8 +95,10 @@
         #endregion
 
         private System.Windows.Forms.DataGridView StokFormdata;
-        private uniProjeDataSet uniProjeDataSet;
-        private System.Windows.Forms.BindingSource stokBindingSource;
-        private uniProjeDataSetTableAdapters.StokTableAdapter stokTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn urunKodu;
+        private System.Windows.Forms.DataGridViewTextBoxColumn UrunAdi;
+        private System.Windows.Forms.DataGridViewTextBoxColumn UrunAdedi;
+        private System.Windows.Forms.DataGridViewTextBoxColumn UrunAlisFiyati;
+        private System.Windows.Forms.DataGridViewTextBoxColumn satisFiyati;
     }
 }

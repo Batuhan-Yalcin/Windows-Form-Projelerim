@@ -3,7 +3,7 @@
   "WorkspaceRootPath": "C:\\Users\\Emre\\Desktop\\C# Windows Form Projeleri\\Giri\u015FSistemiProjesi\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4C70ACFE-9846-4A04-860B-A353877A9983}|Giri\u015FSistemiProjesi.csproj|C:\\Users\\Emre\\Desktop\\C# Windows Form Projeleri\\Giri\u015FSistemiProjesi\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4C70ACFE-9846-4A04-860B-A353877A9983}|Giri\u015FSistemiProjesi.csproj|c:\\users\\emre\\desktop\\c# windows form projeleri\\giri\u015Fsistemiprojesi\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4C70ACFE-9846-4A04-860B-A353877A9983}|Giri\u015FSistemiProjesi.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -11,7 +11,7 @@
       "RelativeMoniker": "D:0:0:{4C70ACFE-9846-4A04-860B-A353877A9983}|Giri\u015FSistemiProjesi.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4C70ACFE-9846-4A04-860B-A353877A9983}|Giri\u015FSistemiProjesi.csproj|c:\\users\\emre\\desktop\\c# windows form projeleri\\giri\u015Fsistemiprojesi\\girisformu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4C70ACFE-9846-4A04-860B-A353877A9983}|Giri\u015FSistemiProjesi.csproj|C:\\Users\\Emre\\Desktop\\C# Windows Form Projeleri\\Giri\u015FSistemiProjesi\\girisformu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4C70ACFE-9846-4A04-860B-A353877A9983}|Giri\u015FSistemiProjesi.csproj|solutionrelative:girisformu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -46,8 +46,7 @@
               "RelativeToolTip": "GirisFormu.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAB0AAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-12T16:35:12.87Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-12T16:35:12.87Z"
             },
             {
               "$type": "Document",
@@ -58,8 +57,7 @@
               "ToolTip": "C:\\Users\\Emre\\Desktop\\C# Windows Form Projeleri\\Giri\u015FSistemiProjesi\\GirisFormu.cs [Tasar\u0131m]",
               "RelativeToolTip": "GirisFormu.cs [Tasar\u0131m]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-12T16:31:10.097Z",
-              "EditorCaption": " [Tasar\u0131m]"
+              "WhenOpened": "2024-12-12T16:31:10.097Z"
             },
             {
               "$type": "Document",
@@ -67,8 +65,8 @@
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\Users\\Emre\\Desktop\\C# Windows Form Projeleri\\Giri\u015FSistemiProjesi\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "C:\\Users\\Emre\\Desktop\\C# Windows Form Projeleri\\Giri\u015FSistemiProjesi\\Form1.cs*",
-              "RelativeToolTip": "Form1.cs*",
+              "ToolTip": "C:\\Users\\Emre\\Desktop\\C# Windows Form Projeleri\\Giri\u015FSistemiProjesi\\Form1.cs",
+              "RelativeToolTip": "Form1.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-12T16:10:52.303Z",
@@ -83,8 +81,7 @@
               "ToolTip": "C:\\Users\\Emre\\Desktop\\C# Windows Form Projeleri\\Giri\u015FSistemiProjesi\\Form1.cs [Tasar\u0131m]*",
               "RelativeToolTip": "Form1.cs [Tasar\u0131m]*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-12T15:59:30.032Z",
-              "EditorCaption": " [Tasar\u0131m]"
+              "WhenOpened": "2024-12-12T15:59:30.032Z"
             }
           ]
         }

@@ -8,15 +8,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace BatuGirisForm
 {
     public partial class StoklarForm: Form
     {
-        string connectionString = "Server=BATUHAN\\SQLEXPRESS;Database=uniProje;Trusted_Connection=True;";
-        
-
         public StoklarForm ()
         {
             InitializeComponent();
@@ -27,50 +23,28 @@ namespace BatuGirisForm
 
         }
 
-        void MusteriGetir()
-        {
-          SqlConnection  baglanti = new SqlConnection("server = .;Initial Catalog=uniProje;Integrated Security=SSPI");
-            baglanti.Open();
-          SqlDataAdapter  da = new SqlDataAdapter("SELECT * FROM Stok", baglanti);
-            DataTable dt = new DataTable();
-            da.Fill(dt);
-            StokFormdata.DataSource = dt; 
-            baglanti.Close();
-        }
-
         private void StoklarForm_Load(object sender, EventArgs e)
         {
-          
-         
-            this.stokTableAdapter.Fill(this.uniProjeDataSet.Stok);
-            
-            
-            //  string connectionString = "Server=BATUHAN\\;Database=uniProje;Trusted_Connection=True;";
+            // Veritabanı bağlantısını ve veri çekmeyi burada yapacağız
+            string connectionString = "Server=BATUHAN\\;Database=uniProje;Trusted_Connection=True;";
             string query = "SELECT UrunKodu, UrunAdi, UrunAdedi, UrunAlisFiyati, satisFiyati FROM Stok";
 
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 SqlDataAdapter dataAdapter = new SqlDataAdapter(query, connection);
                 DataTable dataTable = new DataTable();
-                dataAdapter.Fill(dataTable); 
-                BindingSource bindingSource = new BindingSource();
-                bindingSource.DataSource = dataTable;
+                dataAdapter.Fill(dataTable);  // Veritabanından veri çekiliyor
 
-                StokFormdata.DataSource = bindingSource;
-                /*
-              
-                StokFormdata.Columns.Clear();  
+                // DataGridView kolonlarını manuel olarak ekliyoruz
+                StokFormdata.Columns.Clear();  // Önce var olan kolonları temizliyoruz
                 StokFormdata.Columns.Add("UrunKodu", "Ürün Kodu");
                 StokFormdata.Columns.Add("UrunAdi", "Ürün Adı");
                 StokFormdata.Columns.Add("UrunAdedi", "Ürün Adedi");
                 StokFormdata.Columns.Add("UrunAlisFiyati", "Alış Fiyatı");
                 StokFormdata.Columns.Add("SatisFiyati", "Satış Fiyatı");
-                */
-             
-                StokFormdata.AutoGenerateColumns = true; 
 
-                StokFormdata.DataSource = null;
-                StokFormdata.DataSource = dataTable;  
+                // Veriyi DataGridView'e bağlama
+                StokFormdata.DataSource = dataTable;  // DataTable verisini DataGridView'e atıyoruz
                 if (dataTable.Rows.Count == 0)
                 {
                     MessageBox.Show("Veri tabanında veri bulunamadı.");
@@ -94,7 +68,7 @@ namespace BatuGirisForm
                 DataTable dataTable = new DataTable();
                 dataAdapter.Fill(dataTable);
 
-                
+                // Veriyi DataGridView'e bağlama
                 StokFormdata.DataSource = dataTable;
             }
         }
